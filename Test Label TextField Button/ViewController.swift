@@ -9,6 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var labelTitle: UILabel!
+    
+    @IBOutlet weak var addTextField: UITextField!
+    
+    
+    @IBAction func changeButton(_ sender: Any) {
+        
+        print("You Click Change Button")
+        let _strAddText: String = addTextField.text!
+        labelTitle.text = _strAddText
+        
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
